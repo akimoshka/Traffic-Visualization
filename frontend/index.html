@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Traffic Globe</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/globe.gl"></script>
+</head>
+<body>
+  <!-- Plot Popup -->
+  <div id="plot-popup">
+    <div id="plot-box">
+      <span id="close-popup">✖</span>
+      <img src="/activity_plot.png" alt="Activity Plot" />
+    </div>
+  </div>
+
+  <div id="tooltip"></div>
+
+  <div id="panel">
+    <h2>Traffic Monitor</h2>
+    <label><input type="checkbox" id="suspicious-toggle" /> Show only suspicious</label>
+
+    <label for="speed-range">Speed</label>
+    <input type="range" id="speed-range" min="100" max="5000" value="1000" step="100">
+    <small id="speed-display">x1</small>
+
+    <button id="stop-button" class="fancy-button">⏹️ Stop Simulation</button>
+  </div>
+
+  <div id="country-panel">
+    <h3>Top Countries</h3>
+    <ul id="country-list"></ul>
+  </div>
+
+  <div id="clock"></div>
+  <div id="globeViz"></div>
+  <script src="script.js"></script>
+</body>
+</html>
