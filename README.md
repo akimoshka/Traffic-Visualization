@@ -1,4 +1,4 @@
-# Traffic Visualization 🌐📦
+# Traffic Visualization
 
 This project visualizes suspicious network traffic around the globe using a 3D interactive globe.
 
